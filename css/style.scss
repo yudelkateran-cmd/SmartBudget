@@ -1,0 +1,48 @@
+/*variables*/
+$card-bg:cyan;
+$card-title-color:blue;
+$card-color: white;
+
+$navbar-brand-font-size:1.5rem;
+$navbar-light-color: blue;
+$navbar-light-hover-color:cyan;
+$navbar-light-active-color:yellow;
+$navbar-light-disabled-color: white;
+$dropdown-bg: cyan;
+$dropdown-link-hover-bg:blue;
+$input-bg:rgb(54, 53, 53);
+$carousel-control-color:yellow;
+
+/*Importación de bootstrap.scss*/
+@import "../scss/bootstrap.scss";
+
+/*sobrescrituras*/
+:root{
+    --bs-tertiary-bg-rgb: 255, 0, 0;
+}
+
+.nav-item--inferior{
+    color: greenyellow !important;
+}
+
+/* Estilos para los iconos del footer */
+.redes-sociales {
+    display: flex;
+    gap: 15px; /* Espacio entre cada icono */
+    align-items: right;
+    margin-right: 0;
+    color: black;
+}
+
+.icono-social i{
+    color: rgb(50, 27, 27);      
+    font-size: 20px;  /* Tamaño del icono */
+    text-decoration: none; /* Quita la raya de subrayado del link */
+    transition: color 0.3s ease; /* Suaviza el cambio de color */
+    align-items: right;
+}
+
+/* Efecto al pasar el mouse por encima */
+.icono-social:hover {
+    color: #edefe7;
+}
