@@ -222,6 +222,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-weight: 500;
   line-height: 1.2;
   color: var(--bs-heading-color);
+  text-align: center; /*Centrando el titulo*/
+  font-style: italic; /*Cursiva*/
 }
 
 h1, .h1 {
@@ -4343,7 +4345,7 @@ textarea.form-control-lg {
   --bs-card-spacer-y: 1rem;
   --bs-card-spacer-x: 1rem;
   --bs-card-title-spacer-y: 0.5rem;
-  --bs-card-title-color: blue;
+  --bs-card-title-color: rgb(24, 24, 26);
   --bs-card-subtitle-color: ;
   --bs-card-border-width: var(--bs-border-width);
   --bs-card-border-color: var(--bs-border-color-translucent);
@@ -4355,8 +4357,8 @@ textarea.form-control-lg {
   --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
   --bs-card-cap-color: ;
   --bs-card-height: ;
-  --bs-card-color: white;
-  --bs-card-bg: cyan;
+  --bs-card-color: rgb(8, 8, 8);
+  --bs-card-bg: rgb(235, 248, 232);
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;
@@ -4370,6 +4372,7 @@ textarea.form-control-lg {
   background-clip: border-box;
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
+  
 }
 .card > hr {
   margin-right: 0;
@@ -4413,6 +4416,8 @@ textarea.form-control-lg {
 
 .card-text:last-child {
   margin-bottom: 0;
+  font-style: italic;
+  text-align: center;
 }
 
 .card-link + .card-link {
@@ -4470,6 +4475,7 @@ textarea.form-control-lg {
 .card-img-top,
 .card-img-bottom {
   width: 100%;
+  
 }
 
 .card-img,
@@ -6013,11 +6019,17 @@ textarea.form-control-lg {
   width: 100%;
   margin-right: -100%;
   backface-visibility: hidden;
-  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;  
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;        /* IMPORTANTE: Fuerza a la imagen a llenar la altura del div */
+  object-fit: contain; /* La imagen se ajusta sin cortarse */
 }
 @media (prefers-reduced-motion: reduce) {
-  .carousel-item {
+  .carousel-item { 
     transition: none;
+    
   }
 }
 
@@ -6025,6 +6037,7 @@ textarea.form-control-lg {
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
+  
 }
 
 .carousel-item-next:not(.carousel-item-start),
@@ -6035,12 +6048,14 @@ textarea.form-control-lg {
 .carousel-item-prev:not(.carousel-item-end),
 .active.carousel-item-start {
   transform: translateX(-100%);
+  
 }
 
 .carousel-fade .carousel-item {
   opacity: 0;
   transition-property: opacity;
   transform: none;
+  object-fit: contain; /*Modificando para que la imagen este adentro del container*/
 }
 .carousel-fade .carousel-item.active,
 .carousel-fade .carousel-item-next.carousel-item-start,
@@ -6170,6 +6185,9 @@ textarea.form-control-lg {
   padding-bottom: 1.25rem;
   color: var(--bs-carousel-caption-color);
   text-align: center;
+  background: rgba(255, 255, 255, 0.2);/*Modificando el fondo*/
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
 }
 
 .carousel-dark {
@@ -11986,7 +12004,7 @@ textarea.form-control-lg {
 }
 /*sobrescrituras*/
 :root {
-  --mi-barra-degradada: linear-gradient(70deg, #04065e 0%, #5cd5f0 80%);
+  --mi-barra-degradada: linear-gradient(70deg, #6fed7d 0%, #2c5509 80%);
 }
 
 .nav-item--inferior {
