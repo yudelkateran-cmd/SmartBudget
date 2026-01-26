@@ -11996,11 +11996,11 @@ textarea.form-control-lg {
   gap: 15px; /* Espacio entre cada icono */
   align-items: right;
   margin-right: 0;
-  color: black;
+  color: rgb(125, 227, 161);
 }
 
 .icono-social i {
-  color: rgb(50, 27, 27);
+  color: rgb(229, 85, 85);
   font-size: 20px; /* Tamaño del icono */
   text-decoration: none; /* Quita la raya de subrayado del link */
   transition: color 0.3s ease; /* Suaviza el cambio de color */
