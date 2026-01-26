@@ -95,12 +95,12 @@
   --bs-tertiary-bg: #f8f9fa;
   --bs-tertiary-bg-rgb: 248, 249, 250;
   --bs-heading-color: inherit;
-  --bs-link-color: #0d6efd;
+  --bs-link-color: #161617;
   --bs-link-color-rgb: 13, 110, 253;
   --bs-link-decoration: underline;
   --bs-link-hover-color: rgb(10.4, 88, 202.4);
   --bs-link-hover-color-rgb: 10, 88, 202;
-  --bs-code-color: #d63384;
+  --bs-code-color: #db9fbd;
   --bs-highlight-color: #212529;
   --bs-highlight-bg: rgb(255, 242.6, 205.4);
   --bs-border-width: 1px;
@@ -123,13 +123,13 @@
   --bs-focus-ring-color: rgba(13, 110, 253, 0.25);
   --bs-form-valid-color: #198754;
   --bs-form-valid-border-color: #198754;
-  --bs-form-invalid-color: #dc3545;
+  --bs-form-invalid-color: #efe3e4;
   --bs-form-invalid-border-color: #dc3545;
 }
 
 [data-bs-theme=dark] {
   color-scheme: dark;
-  --bs-body-color: #dee2e6;
+  --bs-body-color: #0f1010;
   --bs-body-color-rgb: 222, 226, 230;
   --bs-body-bg: #212529;
   --bs-body-bg-rgb: 33, 37, 41;
@@ -3913,15 +3913,15 @@ textarea.form-control-lg {
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: blue;
+  --bs-navbar-color: rgb(244, 244, 250);
   --bs-navbar-hover-color: cyan;
   --bs-navbar-disabled-color: white;
-  --bs-navbar-active-color: yellow;
+  --bs-navbar-active-color: rgb(240, 247, 241);
   --bs-navbar-brand-padding-y: 0.125rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.5rem;
-  --bs-navbar-brand-color: yellow;
-  --bs-navbar-brand-hover-color: yellow;
+  --bs-navbar-brand-color:rgb(244, 249, 244);
+  --bs-navbar-brand-hover-color: rgb(6, 60, 13);
   --bs-navbar-nav-link-padding-x: 0.5rem;
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
@@ -3931,6 +3931,7 @@ textarea.form-control-lg {
   --bs-navbar-toggler-border-radius: var(--bs-border-radius);
   --bs-navbar-toggler-focus-width: 0.25rem;
   --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+  background: var(--mi-barra-degradada) !important; /*Modificado*/
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -4138,6 +4139,7 @@ textarea.form-control-lg {
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
+    
   }
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
@@ -6007,6 +6009,7 @@ textarea.form-control-lg {
   position: relative;
   display: none;
   float: left;
+  height: 400px;
   width: 100%;
   margin-right: -100%;
   backface-visibility: hidden;
@@ -11983,7 +11986,7 @@ textarea.form-control-lg {
 }
 /*sobrescrituras*/
 :root {
-  --bs-tertiary-bg-rgb: 255, 0, 0;
+  --mi-barra-degradada: linear-gradient(70deg, #04065e 0%, #5cd5f0 80%);
 }
 
 .nav-item--inferior {
