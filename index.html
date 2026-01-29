@@ -29,6 +29,15 @@
                             <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Envíanos un mensaje o duda">
                             Contáctenos
                             </a>
+                            <a class="nav-link" href="#" role="button"
+                                data-bs-toggle="popover" 
+                                data-bs-placement="bottom" 
+                                data-bs-title="SmartBudget SpA" 
+                                data-bs-html="true" 
+                                data-bs-content="<b>Email:</b> contacto@smartbudget.cl<br><b>Tel:</b> +56 9 1234 5678<br><b>Dirección:</b> Av. Finanzas 2026, Chile"
+                                data-bs-trigger="focus">
+                                Contáctenos
+                            </a>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#">Ubicános</a></li>
                     </ul>
@@ -121,6 +130,15 @@
             </div>
         </nav>
     </footer>
-    
+<script>
+        // 1. Inicializar Tooltips
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        // 2. Inicializar Popovers
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
 </body>
 </html>
